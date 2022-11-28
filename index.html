@@ -2,20 +2,21 @@
 <html class="no-js" lang="es">
 
 <head>
-    <title>Simulación de procesos</title>
+    <title>Formato Necesidades</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="./libs/css/jquery/jquery.ui.css" type="text/css" />
-    <link rel="stylesheet" href="./libs/css/bizagi-font.css" type="text/css" />
-    <link rel="stylesheet" href="./libs/css/app.css" type="text/css" />
-    <script type="text/javascript" src="./libs/js/app/app.bizagi.min.js"></script>
-    <link href="./libs/css/google-opensans.css" rel="stylesheet">
+    <link rel="stylesheet" href="libs/css/jquery/jquery.ui.css" type="text/css" />
+    <link rel="stylesheet" href="libs/css/bizagi-font.css" type="text/css" />
+    <link rel="stylesheet" href="libs/css/app.css" type="text/css" />
+    <script type="text/javascript" src="libs/js/app/app.bizagi.min.js"></script>
+    <link href="libs/css/google-opensans.css" rel="stylesheet">
     <link rel="shortcut icon" href="./libs/img/logoITP.png" type="image/x-icon">
 </head>
 
 <body class="off-canvas hide-extras">
+
     
 <!-- *****************************************************************************
  process-viewer
@@ -34,10 +35,10 @@
         <a href="http://www.mozilla.org/en-US/firefox/new/" title="Firefox" target="_blank"><span class="biz-ex-iconbrowser-firefox"></span></a>
         <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" title="IE 9+" target="_blank"><span class="biz-ex-iconbrowser-ie"></span></a>
     </div>
-    <script type="text/javascript" src="./libs/js/app/app.ie8detect.js"></script>
+    <script type="text/javascript" src="libs/js/app/app.ie8detect.js"></script>
 
-    <script src="./key.json.js"></script>
-    <script id="json" src="./libs/js/json/configuration.json.js"></script>
+    <script src="key.json.js"></script>
+    <script id="json" src="libs/js/json/configuration.json.js"></script>
 
     <script id="initialization">
         switch (window.location.protocol) {
@@ -61,7 +62,7 @@
         if (PublishWebAttributes.useTheme) {
             var lessScript = document.createElement('script');
             lessScript.id = 'responsive-polyfill';
-            lessScript.src = './libs/js/app/less-1.4.1.min.js';
+            lessScript.src = 'libs/js/app/less-1.4.1.min.js';
             document.write(lessScript.outerHTML);
         }
 
@@ -69,36 +70,36 @@
         if (IsIE8Browser()) {
             var polyfillEventListener = document.createElement('script');
             polyfillEventListener.id = 'eventListener-polyfill';
-            polyfillEventListener.src = './libs/js/app/ie8/addEventListener.min.js';
+            polyfillEventListener.src = 'libs/js/app/ie8/addEventListener.min.js';
             document.write(polyfillEventListener.outerHTML);
 
             var modifiedKineticJs = document.createElement('script');
             modifiedKineticJs.id = 'kinetic-ie8';
-            modifiedKineticJs.src = './libs/js/app/ie8/kinetic.min.js';
+            modifiedKineticJs.src = 'libs/js/app/ie8/kinetic.min.js';
             document.write(modifiedKineticJs.outerHTML);
 
             var jQueryScriptForIE8 = document.createElement('script');
             jQueryScriptForIE8.id = 'jquery-ie8';
-            jQueryScriptForIE8.src = './libs/js/app/ie8/jquery.min.js';
+            jQueryScriptForIE8.src = 'libs/js/app/ie8/jquery.min.js';
             document.write(jQueryScriptForIE8.outerHTML);
 
         } else {
 
             var jQueryScriptForModernBrowsers = document.createElement('script');
             jQueryScriptForModernBrowsers.id = 'jquery-modern-browsers';
-            jQueryScriptForModernBrowsers.src = './libs/js/app/jquery.min.js';
+            jQueryScriptForModernBrowsers.src = 'libs/js/app/jquery.min.js';
             document.write(jQueryScriptForModernBrowsers.outerHTML);
 
             var kineticJs = document.createElement('script');
             kineticJs.id = 'kinetic';
-            kineticJs.src = './libs/js/app/kinetic.min.js';
+            kineticJs.src = 'libs/js/app/kinetic.min.js';
             document.write(kineticJs.outerHTML);
         }
     </script>
 
-    <script src="./libs/js/app/process-viewer.libraries.min.js"></script>
-    <script src="./libs/js/app/process-viewer.plugins.min.js"></script>
-    <script src="./libs/js/app/process-viewer.min.js"></script>
+    <script src="libs/js/app/process-viewer.libraries.min.js"></script>
+    <script src="libs/js/app/process-viewer.plugins.min.js"></script>
+    <script src="libs/js/app/process-viewer.min.js"></script>
 
 
 <!-- 
@@ -181,7 +182,7 @@
 		<div class="biz-gradien-scroll"></div>
 	</section>
 	<div class="biz-ex-layout row">
-		<div class="large-3 columns biz-ex-navigation-left hide-for-small">
+		<div class="large-3 columns biz-ex-navigation-left">
 			<div class="biz-ex-menu-toggle-container"></div>
 			<div class="biz-ex-navigation-list"></div>
 		</div>
@@ -208,9 +209,9 @@
 	<div class='biz-ex-diagram-view'>
 		<div class="biz-ex-diagram-data">
 			<a class="button sidebar-button" id="sidebarButton" href="#sidebar">
-				<img src="./libs/img/bzg-panel-expand.svg" class="biz-ex-svg-icon biz-ex-svg-toggle biz-ex-menu-visible-toggle biz-ex-menu-toggle-show"
+				<img src="libs/img/bzg-panel-expand.svg" class="biz-ex-svg-icon biz-ex-svg-toggle biz-ex-menu-visible-toggle biz-ex-menu-toggle-show"
 					 alt="">
-				<img src="./libs/img/bzg-panel-contract.svg" class="biz-ex-svg-icon biz-ex-svg-toggle biz-ex-menu-visible-toggle biz-ex-menu-toggle-hide"
+				<img src="libs/img/bzg-panel-contract.svg" class="biz-ex-svg-icon biz-ex-svg-toggle biz-ex-menu-visible-toggle biz-ex-menu-toggle-hide"
 					 alt="">
 			</a>
 
@@ -240,7 +241,7 @@
 				</div>
 				<span class="biz-ex-dialog-process-title">
 					<a href="#dialog/element/${id}" class="biz-ex-more-info biz-ex-navigate" data-css="biz-ex-attributes">
-						<img src="./libs/img/bzg-summary.svg" class="biz-ex-svg-icon biz-ex-svg-summary"
+						<img src="libs/img/bzg-summary.svg" class="biz-ex-svg-icon biz-ex-svg-summary"
 							 alt="">
 					</a>
 				</span>
@@ -974,11 +975,10 @@
 <script type="text/x-jquery-tmpl" id="HeaderViewTmpl">
     <div class="large-3 columns biz-ex-logo">
         <a class="button sidebar-button show-for-small" id="toggleMenuButton" href="#sidebar">
-            <!<img src="./libs/img/logoITP.png">-->
+            <img src="libs/img/biz-ex-icon-menu.png" />
         </a>
         <a href="list/" class="biz-ex-navigate biz-ex-logo-navigate">
-            <!--<i class="biz-ex-logo-img"></i>-->
-            <img src="./libs/img/logoITP.png" width="100" height="100">
+            <img src="./libs/img/LogoITP.png" alt="Logo ITP" width="100" height="100">
         </a>
     </div>
     <div class="large-9 columns biz-ex-top-nav">
@@ -1005,7 +1005,7 @@
                 </li>
                 {{if !Bizagi.AppModel.personalized}}
                 <li>
-                    <a href="http://www.itpachuca.edu.mx/index.php" target="_blank" class="biz-ex-bizagi">${Bizagi.Util.getResource('itpachuca')}</a>
+                    <a href="http://www.itpachuca.edu.mx/index.php" target="_blank" class="biz-ex-bizagi">ITPachuca</a>
                 </li>
                 {{/if}}
             </ul>
@@ -1030,10 +1030,10 @@
             {{each hierarchyTree.categories}}
             {{if diagrams.length > 0 || categories.length > 0}}
             <li class="biz-ex-hierarchy-root">
-                <img src="./libs/img/bzg-arrow-down.svg" class="biz-ex-svg-icon toggle-sub-diagrams"
+                <img src="libs/img/bzg-arrow-down.svg" class="biz-ex-svg-icon toggle-sub-diagrams"
                      alt="">
                 <a class="truncate-text biz-ex-name biz-ex-menu biz-ex-folder-menu">
-                    <img src="./libs/img/bzg-folder.svg" class="biz-ex-svg-icon biz-ex-svg-folder" alt="folder">
+                    <img src="libs/img/bzg-folder.svg" class="biz-ex-svg-icon biz-ex-svg-folder" alt="folder">
                     ${$value.name}
                 </a>
                 {{html
@@ -1058,10 +1058,10 @@
         {{each diagrams}}
         <li class="biz-ex-hierarchy-diagram">
             {{if diagrams.length > 0}}
-            <img src="./libs/img/bzg-arrow-down.svg" class="biz-ex-svg-icon toggle-sub-diagrams biz-ex-svg-toggle" alt="">
+            <img src="libs/img/bzg-arrow-down.svg" class="biz-ex-svg-icon toggle-sub-diagrams biz-ex-svg-toggle" alt="">
             {{/if}}
             <a href="diagram/${id}" class="biz-ex-navigate biz-ex-diagram-link" title="${name}">
-                <img src="./libs/img/bzg-diagram.svg" class="biz-ex-svg-icon biz-ex-svg-diagram" alt="folder">
+                <img src="libs/img/bzg-diagram.svg" class="biz-ex-svg-icon biz-ex-svg-diagram" alt="folder">
                 ${$value.name}
             </a>
             {{html
@@ -1080,9 +1080,9 @@
         {{each categories}}
         {{if diagrams.length > 0 || categories.length > 0}}
         <li class="biz-ex-hierarchy-subfolder">
-            <img src="./libs/img/bzg-arrow-down.svg" class="biz-ex-svg-icon toggle-sub-diagrams biz-ex-svg-toggle" alt="">
+            <img src="libs/img/bzg-arrow-down.svg" class="biz-ex-svg-icon toggle-sub-diagrams biz-ex-svg-toggle" alt="">
             <a class="truncate-text biz-ex-name biz-ex-menu biz-ex-folder-menu">
-                <img src="./libs/img/bzg-folder.svg" class="biz-ex-svg-icon biz-ex-svg-folder" alt="folder">
+                <img src="libs/img/bzg-folder.svg" class="biz-ex-svg-icon biz-ex-svg-folder" alt="folder">
                 ${$value.name}
             </a>
             {{html
@@ -1797,7 +1797,7 @@ h1, h2, h3, h4, h5, h6,
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
           © 2022 Copyright:
           <label class="text-white">Misael Morales Matias</label>
-          <a class="text-dark" href="http://www.itpachuca.edu.mx/index.php">Instituto Tecnológico de Pachica</a>
+          <a class="text-dark" href="http://www.itpachuca.edu.mx/index.php" target="_blank">Instituto Tecnológico de Pachica</a>
         </div>
         <!-- Copyright -->
       </footer>
